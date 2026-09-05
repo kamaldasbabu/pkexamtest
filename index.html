@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Dynamic Exam Portal</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <h1 id="exam-title">Exam Title Loading...</h1>
+        <p id="exam-subtitle">Dynamic Question Paper • Loading...</p>
+      </div>
+
+      <div class="header-actions">
+        <div id="timer-box" class="timer-badge">
+          <svg class="icon-clock" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span id="timer-display">00:00</span>
+        </div>
+        <button id="submit-exam-btn" class="btn btn-submit" onclick="confirmSubmitExam()">
+          Submit Exam
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dynamic Section/Subject Tabs -->
+  <nav class="section-nav">
+    <div id="section-tabs-container" class="section-container custom-scroll">
+      <!-- Generated dynamically from JSON -->
+    </div>
+  </nav>
+
+  <!-- Main Body Layout -->
+  <main class="main-layout">
+
+    <!-- Left: Question Container / Result View -->
+    <section class="content-panel">
+
+      <!-- Test Screen -->
+      <div id="test-view" class="card test-card">
+        <div class="test-body">
+          <div class="question-header">
+            <span class="badge" id="q-section-badge">Section</span>
+            <div class="marks-info">
+              Marks: <span class="text-success font-semibold" id="positive-mark-display">+1.0</span> | 
+              Negative: <span class="text-danger font-semibold" id="negative-mark-display">-0.25</span>
+            </div>
+          </div>
+
+          <div class="question-content">
+            <div id="q-direction" class="direction-text"></div>
+            <h2 id="q-text" class="question-text"></h2>
+          </div>
+
+          <div id="q-options" class="options-container">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <div class="test-footer">
+          <button id="prev-btn" onclick="navigateQuestion(-1)" class="btn btn-outline">
+            ← Previous
+          </button>
+          <div class="action-buttons">
+            <button onclick="clearCurrentResponse()" class="btn btn-text">
+              Clear Response
+            </button>
+            <button id="next-btn" onclick="navigateQuestion(1)" class="btn btn-primary">
+              Next →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result Screen (Initially Hidden) -->
+      <div id="result-view" class="card result-card hidden">
+        <div class="result-header">
+          <div class="success-icon-wrap">
+            <svg class="success-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h2 class="result-title">Exam Summary & Score Card</h2>
+          <p class="result-subtitle" id="result-exam-title"></p>
+        </div>
+
+        <!-- Metric Grid -->
+        <div class="metrics-grid">
+          <div class="metric-card bg-primary-light">
+            <div class="metric-label text-primary">Final Score</div>
+            <div id="res-score" class="metric-value text-primary-dark">0.00</div>
+          </div>
+          <div class="metric-card bg-success-light">
+            <div class="metric-label text-success">Correct</div>
+            <div id="res-correct" class="metric-value text-success">0</div>
+          </div>
+          <div class="metric-card bg-danger-light">
+            <div class="metric-label text-danger">Incorrect</div>
+            <div id="res-wrong" class="metric-value text-danger">0</div>
+          </div>
+          <div class="metric-card bg-slate-light">
+            <div class="metric-label text-secondary">Unattempted</div>
+            <div id="res-unattempted" class="metric-value text-secondary">0</div>
+          </div>
+        </div>
+
+        <!-- Section Breakdown -->
+        <div class="section-breakdown-wrapper">
+          <h3 class="subsection-title">Section-wise Performance</h3>
+          <div id="section-breakdown" class="section-list">
+            <!-- Dynamically generated -->
+          </div>
+        </div>
+
+        <!-- Detailed Solutions List -->
+        <div class="solutions-wrapper">
+          <div class="solutions-header">
+            <h3 class="subsection-title mb-0">Detailed Solutions & Explanations</h3>
+            <div class="filter-group">
+              <button onclick="filterReview('all')" class="btn-filter active" id="rev-filter-all">All</button>
+              <button onclick="filterReview('wrong')" class="btn-filter" id="rev-filter-wrong">Incorrect</button>
+              <button onclick="filterReview('skipped')" class="btn-filter" id="rev-filter-skipped">Unattempted</button>
+            </div>
+          </div>
+          <div id="solution-list" class="solution-cards-container custom-scroll">
+            <!-- Dynamically generated -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right: Question Palette -->
+    <aside class="palette-panel">
+      <div class="card palette-card">
+        <h3 class="palette-title">
+          <span>Question Palette</span>
+          <span class="palette-subtitle" id="palette-count">0 Answered</span>
+        </h3>
+
+        <!-- Status Legend -->
+        <div class="palette-legend">
+          <div class="legend-item">
+            <span class="legend-bullet bg-success"></span>
+            <span>Answered</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-bullet bg-slate"></span>
+            <span>Unanswered</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-bullet ring-primary"></span>
+            <span>Current</span>
+          </div>
+        </div>
+
+        <!-- Grid of Buttons -->
+        <div id="palette-grid" class="palette-grid custom-scroll">
+          <!-- Dynamically populated -->
+        </div>
+
+        <button onclick="confirmSubmitExam()" class="btn btn-submit-alt">
+          End & Evaluate Test
+        </button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
