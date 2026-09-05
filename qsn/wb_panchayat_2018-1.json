@@ -1,0 +1,806 @@
+{
+  "examConfig": {
+    "title": "WB Gram Panchayat (Secretary) 2018",
+    "durationMinutes": 90,
+    "positiveMark": 1.0,
+    "negativeMark": 0.25
+  },
+  "sections": [
+    { "id": "sec1", "name": "Part I: English" },
+    { "id": "sec2", "name": "Part II: Bengali" },
+    { "id": "sec3", "name": "Part III: Arithmetic & Reasoning" },
+    { "id": "sec4", "name": "Part IV: General Knowledge" }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "sectionId": "sec1",
+      "direction": "Choose the word which best expresses the meaning of the given word.",
+      "question": "Forsaken",
+      "options": ["(a) Nurtured", "(b) Neglected", "(c) Pardoned", "(d) Abandoned"],
+      "answer": 3,
+      "explanation": "'Forsaken' means deserted or given up entirely, which is best expressed by 'abandoned'."
+    },
+    {
+      "id": 2,
+      "sectionId": "sec1",
+      "direction": "Choose the word which best expresses the meaning of the given word.",
+      "question": "Command",
+      "options": ["(a) Lead", "(b) Instruct", "(c) Manage", "(d) Supervise"],
+      "answer": 1,
+      "explanation": "As a verb, 'command' signifies giving an authoritative directive or order, hence 'instruct'."
+    },
+    {
+      "id": 3,
+      "sectionId": "sec1",
+      "direction": "Change the given sentences from Active into Passive voice.",
+      "question": "He will finish the work in a fortnight.",
+      "options": [
+        "(a) The work will be finished by him in a fortnight.",
+        "(b) The work finished him in a fortnight.",
+        "(c) The work finished by him in a fortnight.",
+        "(d) The work will be finished in a fortnight."
+      ],
+      "answer": 0,
+      "explanation": "Future simple active (will finish) converts to passive: 'will be finished by him'."
+    },
+    {
+      "id": 4,
+      "sectionId": "sec1",
+      "direction": "Change the given sentences from Active into Passive voice.",
+      "question": "Why did your brother write such a letter?",
+      "options": [
+        "(a) Why was letter write by your brother?",
+        "(b) Why was such a letter writed by brother?",
+        "(c) Why was such a letter written by your brother?",
+        "(d) Why was such a letter written as by your brother?"
+      ],
+      "answer": 2,
+      "explanation": "Past interrogative: Why + was + object (such a letter) + past participle (written) + by your brother?"
+    },
+    {
+      "id": 5,
+      "sectionId": "sec1",
+      "direction": "Change the given sentences from Active into Passive voice.",
+      "question": "The cat killed the mouse.",
+      "options": [
+        "(a) The mouse has killed by the cat.",
+        "(b) The mouse was killed by the cat.",
+        "(c) The mouse was killed the cat.",
+        "(d) The mouse was been killed by the cat."
+      ],
+      "answer": 1,
+      "explanation": "Simple past passive: was + killed by the cat."
+    },
+    {
+      "id": 6,
+      "sectionId": "sec1",
+      "direction": "Choose the word which is opposite in meaning to the given word.",
+      "question": "FLUENT",
+      "options": ["(a) Insult", "(b) Inarticulate", "(c) Internal", "(d) Insensitive"],
+      "answer": 1,
+      "explanation": "'Fluent' means speaking smoothly; antonym is 'inarticulate'."
+    },
+    {
+      "id": 7,
+      "sectionId": "sec1",
+      "direction": "Choose the word which is opposite in meaning to the given word.",
+      "question": "Prudent",
+      "options": ["(a) Silly", "(b) Unwise", "(c) Idiotic", "(d) Poor"],
+      "answer": 1,
+      "explanation": "'Prudent' denotes care for the future; antonym is 'unwise'."
+    },
+    {
+      "id": 8,
+      "sectionId": "sec1",
+      "direction": "Choose the word which is opposite in meaning to the given word.",
+      "question": "Concise",
+      "options": ["(a) Intended", "(b) Short", "(c) Protracted", "(d) Elongated"],
+      "answer": 2,
+      "explanation": "'Concise' means brief; antonym is 'protracted' (drawn-out)."
+    },
+    {
+      "id": 9,
+      "sectionId": "sec1",
+      "direction": "Put comma at appropriate places.",
+      "question": "Select the correctly punctuated sentence:",
+      "options": [
+        "(a) Pandit Nehru the first Prime Minister of India died in 1964.",
+        "(b) Pandit Nehru, the first Prime Minister of India, died in 1964.",
+        "(c) Pandit Nehru the first Prime Minister, of India died in 1964.",
+        "(d) Pandit Nehru, the first Prime Minister of India died in 1964."
+      ],
+      "answer": 1,
+      "explanation": "The appositive phrase 'the first Prime Minister of India' requires commas on both sides."
+    },
+    {
+      "id": 10,
+      "sectionId": "sec1",
+      "direction": "Put comma at appropriate places.",
+      "question": "Select the correctly punctuated sentence:",
+      "options": [
+        "(a) Germany, Japan, and Italy formed an alliance.",
+        "(b) Germany, Japan and, Italy formed an alliance.",
+        "(c) Germany, Japan and Italy formed, an alliance.",
+        "(d) Germany, Japan and Italy formed an alliance."
+      ],
+      "answer": 3,
+      "explanation": "Standard British usage takes no comma before 'and' in a basic list of three."
+    },
+    {
+      "id": 11,
+      "sectionId": "sec1",
+      "direction": "Choose the correctly spelt word.",
+      "question": "Choose the correctly spelt word:",
+      "options": ["(a) Santaries", "(b) Sanctuaries", "(c) Santuaries", "(d) Sanctuarise"],
+      "answer": 1,
+      "explanation": "Correct spelling is 'Sanctuaries'."
+    },
+    {
+      "id": 12,
+      "sectionId": "sec1",
+      "direction": "Choose the correctly spelt word.",
+      "question": "Choose the correctly spelt word:",
+      "options": ["(a) Apropriate", "(b) Appropriate", "(c) Appropreite", "(d) Approporite"],
+      "answer": 1,
+      "explanation": "Correct spelling is 'Appropriate'."
+    },
+    {
+      "id": 13,
+      "sectionId": "sec1",
+      "direction": "Choose the correctly spelt word.",
+      "question": "Choose the correctly spelt word:",
+      "options": ["(a) Neccesary", "(b) Necessery", "(c) Necessary", "(d) Necessari"],
+      "answer": 2,
+      "explanation": "Correct spelling is 'Necessary'."
+    },
+    {
+      "id": 14,
+      "sectionId": "sec1",
+      "direction": "Choose the correctly spelt word.",
+      "question": "Choose the correctly spelt word:",
+      "options": ["(a) Superstition", "(b) Supertition", "(c) Superstution", "(d) Soperstition"],
+      "answer": 0,
+      "explanation": "Correct spelling is 'Superstition'."
+    },
+    {
+      "id": 15,
+      "sectionId": "sec1",
+      "direction": "Choose the correctly spelt word.",
+      "question": "Choose the correctly spelt word:",
+      "options": ["(a) Discos", "(b) Discuse", "(c) Discus", "(d) Discuss"],
+      "answer": 3,
+      "explanation": "The verb is 'Discuss'."
+    },
+    {
+      "id": 16,
+      "sectionId": "sec1",
+      "direction": "Fill in the blank with an appropriate word(s).",
+      "question": "You will have to work _______ you are in the office.",
+      "options": ["(a) as long as", "(b) as good as", "(c) as far as", "(d) so far as"],
+      "answer": 0,
+      "explanation": "'As long as' denotes duration/condition."
+    },
+    {
+      "id": 17,
+      "sectionId": "sec1",
+      "direction": "Fill in the blank with an appropriate word(s).",
+      "question": "You must abide _______ orders.",
+      "options": ["(a) to", "(b) by", "(c) for", "(d) from"],
+      "answer": 1,
+      "explanation": "Fixed preposition: 'abide by'."
+    },
+    {
+      "id": 18,
+      "sectionId": "sec1",
+      "direction": "Write one word substitution for the following.",
+      "question": "One who knows everything:",
+      "options": ["(a) Omnipotent", "(b) Omniscient", "(c) Omnipresent", "(d) Omnilogos"],
+      "answer": 1,
+      "explanation": "'Omniscient' = knowing everything."
+    },
+    {
+      "id": 19,
+      "sectionId": "sec1",
+      "direction": "Write one word substitution for the following.",
+      "question": "One who makes an official examination of accounts:",
+      "options": ["(a) Comptroller", "(b) Auditor", "(c) Accountant", "(d) Banker"],
+      "answer": 1,
+      "explanation": "An 'Auditor' examines accounts."
+    },
+    {
+      "id": 20,
+      "sectionId": "sec1",
+      "direction": "Write one word substitution for the following.",
+      "question": "One who is filled with excessive enthusiasm in religious matters:",
+      "options": ["(a) Fugitive", "(b) Gourmand", "(c) Fanatic", "(d) Atheist"],
+      "answer": 2,
+      "explanation": "A 'Fanatic' has excessive religious zeal."
+    },
+    {
+      "id": 21,
+      "sectionId": "sec1",
+      "direction": "Write one word substitution for the following.",
+      "question": "One who hates mankind:",
+      "options": ["(a) Misogynist", "(b) Misanthrope", "(c) Misogamist", "(d) Mercenary"],
+      "answer": 1,
+      "explanation": "'Misanthrope' hates mankind."
+    },
+    {
+      "id": 22,
+      "sectionId": "sec1",
+      "direction": "Write one word substitution for the following.",
+      "question": "A person who walks in sleep:",
+      "options": ["(a) Somnambulist", "(b) Stoic", "(c) Recluse", "(d) Narcissist"],
+      "answer": 0,
+      "explanation": "'Somnambulist' is a sleepwalker."
+    },
+    {
+      "id": 23,
+      "sectionId": "sec1",
+      "direction": "Choose the alternative which best expresses the meaning of the idiom/phrase underlined.",
+      "question": "It was her maiden speech on the stage and she performed well.",
+      "options": ["(a) unprepared speech", "(b) sudden speech", "(c) primary speech", "(d) first speech"],
+      "answer": 3,
+      "explanation": "'Maiden speech' = first speech."
+    },
+    {
+      "id": 24,
+      "sectionId": "sec1",
+      "direction": "Choose the alternative which best expresses the meaning of the idiom/phrase underlined.",
+      "question": "The detective went abroad in search of a culprit but his journey proved to be a wild goose chase.",
+      "options": ["(a) expensive", "(b) full of difficulties", "(c) unprofitable expenditure", "(d) ill advised"],
+      "answer": 2,
+      "explanation": "A 'wild goose chase' is a futile search."
+    },
+    {
+      "id": 25,
+      "sectionId": "sec1",
+      "direction": "Choose the alternative which best expresses the meaning of the idiom/phrase underlined.",
+      "question": "To take after:",
+      "options": ["(a) to resemble", "(b) to remove", "(c) to cheat", "(d) to write down"],
+      "answer": 0,
+      "explanation": "'Take after' means to resemble an ancestor/relative."
+    },
+    {
+      "id": 26,
+      "sectionId": "sec2",
+      "direction": "কোন সমাস নির্ণয় করো।",
+      "question": "কুশাসন = 'কুশ নির্মিত আসন' — কোন সমাস?",
+      "options": ["(a) মধ্যপদলোপী কর্মধারয় সমাস", "(b) নিত্য সমাস", "(c) উপমান কর্মধারয় সমাস", "(d) রূপক কর্মধারয় সমাস"],
+      "answer": 0,
+      "explanation": "মধ্যপদলোপী কর্মধারয় সমাস।"
+    },
+    {
+      "id": 27,
+      "sectionId": "sec2",
+      "direction": "কোন সমাস নির্ণয় করো।",
+      "question": "গ্রামান্তর = 'অন্য গ্রাম' — কোন সমাস?",
+      "options": ["(a) কর্মধারয় সমাস", "(b) নিত্য সমাস", "(c) তৎপুরুষ সমাস", "(d) দ্বিগু সমাস"],
+      "answer": 1,
+      "explanation": "নিত্য সমাস।"
+    },
+    {
+      "id": 28,
+      "sectionId": "sec2",
+      "direction": "কোন সমাস নির্ণয় করো।",
+      "question": "দাঁতকপাটি = 'দাঁতে কপাটি' — কোন সমাস?",
+      "options": ["(a) অধিকরণ তৎপুরুষ সমাস", "(b) নিত্য সমাস", "(c) তৎপুরুষ সমাস", "(d) দ্বিগু সমাস"],
+      "answer": 0,
+      "explanation": "অধিকরণ তৎপুরুষ সমাস।"
+    },
+    {
+      "id": 29,
+      "sectionId": "sec2",
+      "direction": "কোন সমাস নির্ণয় করো।",
+      "question": "সিংহাসন = 'সিংহ চিহ্নিত আসন' — কোন সমাস?",
+      "options": ["(a) মধ্যপদলোপী কর্মধারয় সমাস", "(b) বহুব্রীহি সমাস", "(c) কর্মধারয় সমাস", "(d) দ্বন্দ্ব সমাস"],
+      "answer": 0,
+      "explanation": "মধ্যপদলোপী কর্মধারয় সমাস।"
+    },
+    {
+      "id": 30,
+      "sectionId": "sec2",
+      "direction": "কোন সমাস নির্ণয় করো।",
+      "question": "অনেক = 'এক নয়' — কোন সমাস?",
+      "options": ["(a) নঞ্ তৎপুরুষ সমাস", "(b) সম্বন্ধ তৎপুরুষ সমাস", "(c) অপাদান তৎপুরুষ সমাস", "(d) কোনোটিই নয়"],
+      "answer": 0,
+      "explanation": "নঞ্ তৎপুরুষ সমাস।"
+    },
+    {
+      "id": 31,
+      "sectionId": "sec2",
+      "direction": "কোন বানানটি সঠিক?",
+      "question": "কোন বানানটি শুদ্ধ?",
+      "options": ["(a) মিরীচিকা", "(b) মরীচিকা", "(c) মরিচিকা", "(d) মরীচীকা"],
+      "answer": 1,
+      "explanation": "শুদ্ধ বানান 'মরীচিকা'।"
+    },
+    {
+      "id": 32,
+      "sectionId": "sec2",
+      "direction": "কোন বানানটি সঠিক?",
+      "question": "কোন বানানটি শুদ্ধ?",
+      "options": ["(a) মুমূর্ষু", "(b) মুমূর্ষূ", "(c) মুমূর্ষ", "(d) মূমর্ষু"],
+      "answer": 0,
+      "explanation": "শুদ্ধ বানান 'মুমূর্ষু'।"
+    },
+    {
+      "id": 33,
+      "sectionId": "sec2",
+      "direction": "কোন বানানটি সঠিক?",
+      "question": "কোন বানানটি শুদ্ধ?",
+      "options": ["(a) স্বরস্বতী", "(b) সরস্বতী", "(c) সরস্বতি", "(d) স্বরস্বতি"],
+      "answer": 1,
+      "explanation": "শুদ্ধ বানান 'সরস্বতী'।"
+    },
+    {
+      "id": 34,
+      "sectionId": "sec2",
+      "direction": "কোন বানানটি সঠিক?",
+      "question": "কোন বানানটি শুদ্ধ?",
+      "options": ["(a) ঔদাসিন্য", "(b) ঔদাসিন্যতা", "(c) উদাসীনতা", "(d) উদাসীনতা"],
+      "answer": 2,
+      "explanation": "শুদ্ধ শব্দ 'উদাসীনতা'।"
+    },
+    {
+      "id": 35,
+      "sectionId": "sec2",
+      "direction": "কোন বানানটি সঠিক?",
+      "question": "কোন বানানটি শুদ্ধ?",
+      "options": ["(a) শারীরীক", "(b) শারীরিক", "(c) শারিরীক", "(d) শারিরিক"],
+      "answer": 1,
+      "explanation": "শুদ্ধ বানান 'শারীরিক'।"
+    },
+    {
+      "id": 36,
+      "sectionId": "sec2",
+      "direction": "সঠিক পদ পরিবর্তন নির্বাচন করুন।",
+      "question": "নিম্নের কোনটি সঠিক পদ পরিবর্তন?",
+      "options": ["(a) আলোচনা — আলোচ্য", "(b) ব্যাকরণ — ব্যাকরণিক", "(c) ইচ্ছা — ঐচ্ছিক", "(d) উদয় — উন্নয়ী"],
+      "answer": 2,
+      "explanation": "ইচ্ছা -> ঐচ্ছিক।"
+    },
+    {
+      "id": 37,
+      "sectionId": "sec2",
+      "direction": "সঠিক পদ পরিবর্তন নির্বাচন করুন।",
+      "question": "নিম্নের কোনটি সঠিক পদ পরিবর্তন?",
+      "options": ["(a) উদর — ঔদরিক", "(b) উৎসাহ — উৎসাহিত", "(c) উপচার — উপাচার", "(d) উদ্যান — উদ্যানিত"],
+      "answer": 0,
+      "explanation": "উদর -> ঔদরিক।"
+    },
+    {
+      "id": 38,
+      "sectionId": "sec2",
+      "direction": "সঠিক পদ পরিবর্তন নির্বাচন করুন।",
+      "question": "নিম্নের কোনটি সঠিক পদ পরিবর্তন?",
+      "options": ["(a) অঙ্ক — অঙ্কিত", "(b) অঙ্গ — আঙ্গিক", "(c) অন্ত — অন্তিম", "(d) অন্তঃ — অন্তস্থ"],
+      "answer": 2,
+      "explanation": "অন্ত -> অন্তিম।"
+    },
+    {
+      "id": 39,
+      "sectionId": "sec2",
+      "direction": "সঠিক পদ পরিবর্তন নির্বাচন করুন।",
+      "question": "নিম্নের কোনটি সঠিক পদ পরিবর্তন?",
+      "options": ["(a) উদ্ভব — উদ্ভূত", "(b) উদ্ধার — উদ্ধারিত", "(c) উপমা — উপমাশ্রিত", "(d) উপলব্ধি — উপলব্ধ"],
+      "answer": 0,
+      "explanation": "উদ্ভব -> উদ্ভূত।"
+    },
+    {
+      "id": 40,
+      "sectionId": "sec2",
+      "direction": "সঠিক পদ পরিবর্তন নির্বাচন করুন।",
+      "question": "নিম্নের কোনটি সঠিক পদ পরিবর্তন?",
+      "options": ["(a) গ্রহণ — গ্রাহ্য", "(b) গ্রহণ — গৃহীত", "(c) গ্রহণ — গৃহিত", "(d) কোনোটিই নয়"],
+      "answer": 1,
+      "explanation": "গ্রহণ -> গৃহীত।"
+    },
+    {
+      "id": 41,
+      "sectionId": "sec2",
+      "direction": "বাক্যসংকোচন করো।",
+      "question": "পরিতোষ সহকারে যাহা দেওয়া হয় —",
+      "options": ["(a) পারিতোষিক", "(b) পুরস্কার", "(c) প্রণামী", "(d) কোনোটিই নয়"],
+      "answer": 0,
+      "explanation": "পারিতোষিক।"
+    },
+    {
+      "id": 42,
+      "sectionId": "sec2",
+      "direction": "বাক্যসংকোচন করো।",
+      "question": "অশ্বের চীৎকার —",
+      "options": ["(a) হ্রেষা", "(b) বৃংহিত", "(c) ডাক", "(d) কোনোটিই নয়"],
+      "answer": 0,
+      "explanation": "হ্রেষা।"
+    },
+    {
+      "id": 43,
+      "sectionId": "sec2",
+      "direction": "বাক্যসংকোচন করো।",
+      "question": "আদি নাই যাহার —",
+      "options": ["(a) অন্তহীন", "(b) আদি-অন্তহীন", "(c) অনাদি", "(d) কোনোটিই নয়"],
+      "answer": 2,
+      "explanation": "অনাদি।"
+    },
+    {
+      "id": 44,
+      "sectionId": "sec2",
+      "direction": "বাক্যসংকোচন করো।",
+      "question": "আমিষ ভক্ষণ করেন না যিনি —",
+      "options": ["(a) তৃণভোজী", "(b) নিরামিষাশী", "(c) নিরামিষাশি", "(d) কোনোটিই নয়"],
+      "answer": 1,
+      "explanation": "নিরামিষাশী।"
+    },
+    {
+      "id": 45,
+      "sectionId": "sec2",
+      "direction": "বাক্যসংকোচন করো।",
+      "question": "আয় বুঝে ব্যয় করেন যিনি —",
+      "options": ["(a) স্বল্পব্যয়ী", "(b) কৃপণ", "(c) মিতব্যয়ী", "(d) কোনোটিই নয়"],
+      "answer": 2,
+      "explanation": "মিতব্যয়ী।"
+    },
+    {
+      "id": 46,
+      "sectionId": "sec2",
+      "direction": "সমার্থক শব্দ নির্বাচন করো।",
+      "question": "'গগন' শব্দের অর্থ:",
+      "options": ["(a) আগুন", "(b) আকাশ", "(c) কিরণ", "(d) কন্যা"],
+      "answer": 1,
+      "explanation": "আকাশ।"
+    },
+    {
+      "id": 47,
+      "sectionId": "sec2",
+      "direction": "সমার্থক শব্দ নির্বাচন করো।",
+      "question": "'শতদল' শব্দের অর্থ:",
+      "options": ["(a) বায়ু", "(b) নদী", "(c) আগুন", "(d) পদ্ম"],
+      "answer": 3,
+      "explanation": "পদ্ম।"
+    },
+    {
+      "id": 48,
+      "sectionId": "sec2",
+      "direction": "সমার্থক শব্দ নির্বাচন করো।",
+      "question": "'তনয়' শব্দের অর্থ:",
+      "options": ["(a) কন্যা", "(b) সূর্য", "(c) পুত্র", "(d) বায়ু"],
+      "answer": 2,
+      "explanation": "পুত্র।"
+    },
+    {
+      "id": 49,
+      "sectionId": "sec2",
+      "direction": "সমার্থক শব্দ নির্বাচন করো।",
+      "question": "'মেদিনী' শব্দের অর্থ:",
+      "options": ["(a) সূর্য", "(b) পৃথিবী", "(c) নদী", "(d) গাছ"],
+      "answer": 1,
+      "explanation": "পৃথিবী।"
+    },
+    {
+      "id": 50,
+      "sectionId": "sec2",
+      "direction": "সমার্থক শব্দ নির্বাচন করো।",
+      "question": "'রজনী' শব্দের অর্থ:",
+      "options": ["(a) দুপুর", "(b) রাত্রি", "(c) বিদ্যুৎ", "(d) মেঘ"],
+      "answer": 1,
+      "explanation": "রাত্রি।"
+    },
+    {
+      "id": 51,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "একটি সংখ্যা অন্যটির ২৫%। বৃহত্তরটি ক্ষুদ্রতর থেকে ১২ বেশি। বৃহত্তরটি কত?",
+      "options": ["(a) ৪৮", "(b) ১৬", "(c) ৪", "(d) ১২"],
+      "answer": 1,
+      "explanation": "L = 16।"
+    },
+    {
+      "id": 52,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "আয়ের ২/৩ অংশ ব্যয় করে মাসিক ৩২০০ টাকা সঞ্চয় হয়। ব্যয় কত?",
+      "options": ["(a) ৩৬০০ টাকা", "(b) ২৪০০ টাকা", "(c) ৬৪০০ টাকা", "(d) ৬০০০ টাকা"],
+      "answer": 2,
+      "explanation": "ব্যয় ৬৪০০ টাকা।"
+    },
+    {
+      "id": 53,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "৪০০ টাকার ১০ বছরের সরল সুদ ২৮০ টাকা হলে সুদের হার কত?",
+      "options": ["(a) ৭%", "(b) ৭½%", "(c) ৭¾%", "(d) ৮½%"],
+      "answer": 0,
+      "explanation": "৭%।"
+    },
+    {
+      "id": 54,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "আটজনের গড় বয়স ৪০। ৫৫ বছরের একজন মারা যান এবং ৩৯ বছরের একজন যোগ দেন। নতুন গড় কত?",
+      "options": ["(a) ৩৫", "(b) ৩৬", "(c) ৩৮", "(d) ৩৯"],
+      "answer": 2,
+      "explanation": "৩৮ বছর।"
+    },
+    {
+      "id": 55,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "যোগফল ৮০ এবং পার্থক্য ২০। বর্গের পার্থক্য কত?",
+      "options": ["(a) ১৪০০", "(b) ১৬০০", "(c) ১৮০০", "(d) ২০০০"],
+      "answer": 1,
+      "explanation": "১৬০০।"
+    },
+    {
+      "id": 56,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "MASON = NBTPO হলে WORLD = ?",
+      "options": ["(a) XPSME", "(b) PSMEX", "(c) SMEXP", "(d) EXPSM"],
+      "answer": 0,
+      "explanation": "XPSME।"
+    },
+    {
+      "id": 57,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "২০০০ শিক্ষার্থীর ৪০% ছাত্রী। ছাত্রের ফি ৪০০ টাকা এবং ছাত্রীর ফি ২৫% কম। মোট ফি কত?",
+      "options": ["(a) Rs. 7,20,000", "(b) Rs. 72,000", "(c) Rs. 3,60,000", "(d) Rs. 1,20,000"],
+      "answer": 0,
+      "explanation": "Rs. 7,20,000।"
+    },
+    {
+      "id": 58,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "৭২ কিমি/ঘন্টা গতির ১৩০ মিটার ট্রেন ১৫০ মিটার সেতু অতিক্রম করতে কত সময় নেবে?",
+      "options": ["(a) 9 sec", "(b) 12.1 sec", "(c) 13 sec", "(d) 14 sec"],
+      "answer": 3,
+      "explanation": "১৪ সেকেন্ড।"
+    },
+    {
+      "id": 59,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "নৌকা ৪ কিমি/ঘন্টা এবং স্রোত ১ কিমি/ঘন্টা। অনুকূলে ২০ কিমি যেতে সময় লাগে:",
+      "options": ["(a) 4 hr", "(b) 3 hr", "(c) 2 hr", "(d) 1 hr"],
+      "answer": 0,
+      "explanation": "৪ ঘন্টা।"
+    },
+    {
+      "id": 60,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "শ্যাম, রাম ও সোহন ১৬ দিনে এবং শ্যাম ও রাম ২৪ দিনে করে। সোহন একা করবে কত দিনে?",
+      "options": ["(a) 40", "(b) 48", "(c) 32", "(d) 30"],
+      "answer": 1,
+      "explanation": "৪৮ দিনে।"
+    },
+    {
+      "id": 61,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "২০% ছাড়ে বিক্রয়মূল্য ৭৪০ টাকা হলে ধার্য মূল্য কত?",
+      "options": ["(a) Rs. 725", "(b) Rs. 875", "(c) Rs. 925", "(d) Rs. 1040"],
+      "answer": 2,
+      "explanation": "Rs. 925।"
+    },
+    {
+      "id": 62,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "পরের পদ: ZXYM, VTUS, RPQO, ______ , JHIG",
+      "options": ["(a) LNKM", "(b) NLKM", "(c) NLMK", "(d) LNMK"],
+      "answer": 1,
+      "explanation": "NLKM।"
+    },
+    {
+      "id": 63,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "A ও B-এর গড় বয়স ৫১। A, B-এর থেকে ২ বছরের বড়। দুজনের বয়স কত?",
+      "options": ["(a) 52, 50", "(b) 54, 51", "(c) 50, 52", "(d) 48, 51"],
+      "answer": 0,
+      "explanation": "52, 50।"
+    },
+    {
+      "id": 64,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "মোট ক্রীড়া বাজেট ১,৫০,০০,০০০ টাকা। ক্রিকেট ২৫% ও হকি ১৫% হলে সম্মিলিত ব্যয় কত?",
+      "options": ["(a) Rs. 60,00,000", "(b) Rs. 50,00,000", "(c) Rs. 37,50,000", "(d) Rs. 75,00,000"],
+      "answer": 0,
+      "explanation": "Rs. 60,00,000।"
+    },
+    {
+      "id": 65,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "A : B = 4 : 5 এবং B : C = 10 : 17 হলে A : C কত?",
+      "options": ["(a) 4 : 17", "(b) 8 : 17", "(c) 2 : 17", "(d) 9 : 17"],
+      "answer": 1,
+      "explanation": "8 : 17।"
+    },
+    {
+      "id": 66,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "ক্রম পূরণ করুন: 3, 8, 15, ____ , 35",
+      "options": ["(a) 19", "(b) 21", "(c) 24", "(d) 28"],
+      "answer": 2,
+      "explanation": "২৪।"
+    },
+    {
+      "id": 67,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "১৪০০ শিক্ষার্থীর ২৫% চশমা পরে। তাদের ২/৭ অংশ ছাত্র হলে ছাত্রী কত?",
+      "options": ["(a) 250", "(b) 100", "(c) 200", "(d) 300"],
+      "answer": 0,
+      "explanation": "২৫০।"
+    },
+    {
+      "id": 68,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "২৪ টাকা দরে ৪ ডজন ও ৩২ টাকা দরে ২ ডজন ডিম কিনে ২০% লাভে ডজন প্রতি কত দাম?",
+      "options": ["(a) Rs. 16", "(b) Rs. 21", "(c) Rs. 32", "(d) Rs. 35"],
+      "answer": 2,
+      "explanation": "Rs. 32।"
+    },
+    {
+      "id": 69,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "P-এর বেতন Q-এর চেয়ে ২৫% বেশি হলে Q-এর বেতন শতকরা কত কম?",
+      "options": ["(a) 20%", "(b) 29%", "(c) 31%", "(d) 33⅓%"],
+      "answer": 0,
+      "explanation": "২০%।"
+    },
+    {
+      "id": 70,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "A ও B করে ৭/১১ অংশ। ৫৫০ টাকার মধ্যে C কত পাবে?",
+      "options": ["(a) Rs. 200", "(b) Rs. 300", "(c) Rs. 400", "(d) Rs. 450"],
+      "answer": 0,
+      "explanation": "Rs. 200।"
+    },
+    {
+      "id": 71,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "সমবাহু ত্রিভুজের উচ্চতা 3√3 সেমি হলে বাহুর দৈর্ঘ্য কত?",
+      "options": ["(a) 3 cm", "(b) 6 cm", "(c) 9 cm", "(d) 5 cm"],
+      "answer": 1,
+      "explanation": "6 সেমি।"
+    },
+    {
+      "id": 72,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "৫০০ টাকার জিনিস দুবার ১০% ছাড়ে বিক্রি হলে দাম কত?",
+      "options": ["(a) Rs. 400", "(b) Rs. 405", "(c) Rs. 415", "(d) Rs. 425"],
+      "answer": 1,
+      "explanation": "Rs. 405।"
+    },
+    {
+      "id": 73,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "৭৮ টাকায় বিক্রির লাভ ৬৯ টাকায় বিক্রির লাভের দ্বিগুণ হলে ক্রয়মূল্য কত?",
+      "options": ["(a) Rs. 60", "(b) Rs. 51", "(c) Rs. 55.50", "(d) Rs. 70"],
+      "answer": 0,
+      "explanation": "Rs. 60।"
+    },
+    {
+      "id": 74,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "৬০০ জন BPL যা মোট জনসংখ্যার ২০%। মোট জনসংখ্যা কত?",
+      "options": ["(a) 4100", "(b) 4200", "(c) 4000", "(d) 3000"],
+      "answer": 3,
+      "explanation": "৩০০০ জন।"
+    },
+    {
+      "id": 75,
+      "sectionId": "sec3",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "প্রথম ১০০০ পাতার পর ২% ছাড়। ৫০০০ পাতা ফটোকপির খরচ কত?",
+      "options": ["(a) Rs. 3920", "(b) Rs. 3980", "(c) Rs. 4900", "(d) Rs. 4920"],
+      "answer": 3,
+      "explanation": "Rs. 4920।"
+    },
+    {
+      "id": 76,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "ন্যাশনাল গ্রিন ট্রাইব্যুনাল (NGT)-এর তৎকালীন (২০১৮) চেয়ারম্যান কে ছিলেন?",
+      "options": ["(a) জাস্টিস আদর্শ কুমার গোয়েল", "(b) জাস্টিস স্বতন্ত্র কুমার", "(c) জাস্টিস সমিত সেন", "(d) এঁদের কেউ নন"],
+      "answer": 0,
+      "explanation": "জাস্টিস আদর্শ কুমার গোয়েল।"
+    },
+    {
+      "id": 77,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "ভারতের প্রথম নোবেল পুরস্কার বিজয়ী কে ছিলেন?",
+      "options": ["(a) সি. ভি. রমন", "(b) রবীন্দ্রনাথ ঠাকুর", "(c) অমর্ত্য সেন", "(d) এঁদের কেউ নন"],
+      "answer": 1,
+      "explanation": "রবীন্দ্রনাথ ঠাকুর (১৯১৩)।"
+    },
+    {
+      "id": 78,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "অক্সিজেনের রাসায়নিক সংকেত কী?",
+      "options": ["(a) O₄", "(b) O₃", "(c) O₂", "(d) O₁"],
+      "answer": 2,
+      "explanation": "O₂।"
+    },
+    {
+      "id": 79,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "ভারতে রেপো রেট কে ঘোষণা করে?",
+      "options": ["(a) অর্থ মন্ত্রক", "(b) প্রধানমন্ত্রী", "(c) ভারতীয় রিজার্ভ ব্যাঙ্ক", "(d) রাষ্ট্রপতি"],
+      "answer": 2,
+      "explanation": "ভারতীয় রিজার্ভ ব্যাঙ্ক (RBI)।"
+    },
+    {
+      "id": 80,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "BHIM অ্যাপ কী কাজে ব্যবহৃত হয়?",
+      "options": ["(a) স্মৃতিসৌধ চিহ্নিতকরণ", "(b) ক্যাশলেস পেমেন্ট", "(c) ডিজিটাল স্বাক্ষর", "(d) কোনোটিই নয়"],
+      "answer": 1,
+      "explanation": "ক্যাশলেস ডিজিটাল পেমেন্ট।"
+    },
+    {
+      "id": 81,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "ভারতের সর্বোচ্চ শৃঙ্গ K2 আর কী নামে পরিচিত?",
+      "options": ["(a) কারাকোরাম", "(b) কাশ্মীর", "(c) গডউইন অস্টিন", "(d) কেনেথ"],
+      "answer": 2,
+      "explanation": "গডউইন অস্টিন।"
+    },
+    {
+      "id": 82,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "SHG-এর পূর্ণরূপ কী?",
+      "options": ["(a) Self House Groups", "(b) Self Healthy Groups", "(c) Self Held Groups", "(d) Self Help Groups"],
+      "answer": 3,
+      "explanation": "Self Help Groups।"
+    },
+    {
+      "id": 83,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "ত্রিপুরার রাজ্য ফল কোনটি?",
+      "options": ["(a) কুইন আনারস", "(b) আলফানসো আম", "(c) কাঁঠাল", "(d) কোনোটিই নয়"],
+      "answer": 0,
+      "explanation": "কুইন আনারস।"
+    },
+    {
+      "id": 84,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "'বন্দে মাতরম' কার রচিত?",
+      "options": ["(a) লালা লাজপত রায়", "(b) রবীন্দ্রনাথ ঠাকুর", "(c) বঙ্কিমচন্দ্র চট্টোপাধ্যায়", "(d) তুলসীদাস"],
+      "answer": 2,
+      "explanation": "বঙ্কিমচন্দ্র চট্টোপাধ্যায়।"
+    },
+    {
+      "id": 85,
+      "sectionId": "sec4",
+      "direction": "সঠিক উত্তর নির্বাচন করুন।",
+      "question": "'বাংলার দুঃখ' বলা হয় কোন নদীকে?",
+      "options": ["(a) তিস্তা", "(b) ভাগীরথী", "(c) মহানন্দা", "(d) দামোদর"],
+      "answer": 3,
+      "explanation": "দামোদর নদী।"
+    }
+  ]
+}
