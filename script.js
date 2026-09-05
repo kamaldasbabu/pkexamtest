@@ -7,6 +7,7 @@ const userAnswers = {}; // { qId: optionIndex }
 let timeRemaining = 0;
 let timerInterval = null;
 let isSubmitted = false;
+let candidateName = "";
 
 // DOM Elements
 const examTitleEl = document.getElementById("exam-title");
@@ -36,39 +37,50 @@ async function loadExamData() {
     sections = data.sections;
     questions = data.questions;
 
-    setupExamEnvironment();
+    setupPreExamMetadata();
   } catch (error) {
     console.error("Error loading examination data:", error);
     examTitleEl.innerText = "Error Loading Exam Data";
-    examSubtitleEl.innerText = "Please ensure exam_data.json is present in the root folder.";
+    examSubtitleEl.innerText = "Please ensure exam_data.json is present in the root directory.";
   }
 }
 
-// Setup & Initialize Dynamic Values
-function setupExamEnvironment() {
-  // Titles and Config
+// Setup Exam Titles and Information Prior to Start
+function setupPreExamMetadata() {
   pageTitleEl.innerText = `${examConfig.title} - Online Mock Test`;
   examTitleEl.innerText = examConfig.title;
-  
+
   const totalMarks = (questions.length * examConfig.positiveMark).toFixed(0);
   examSubtitleEl.innerText = `${questions.length} Questions • ${totalMarks} Marks • Duration: ${examConfig.durationMinutes} Mins`;
 
   positiveMarkDisplay.innerText = `+${examConfig.positiveMark.toFixed(2)}`;
   negativeMarkDisplay.innerText = `-${examConfig.negativeMark.toFixed(2)}`;
 
-  // Timer Setup
+  // Display exam info in the modal
+  document.getElementById("modal-exam-title").innerText = examConfig.title;
+  document.getElementById("modal-exam-subtitle").innerText = `Total Questions: ${questions.length} | Duration: ${examConfig.durationMinutes} Minutes`;
+}
+
+// Form Handler to Start Exam
+function handleStartExam(e) {
+  e.preventDefault();
+  const inputEl = document.getElementById("candidate-name-input");
+  candidateName = inputEl.value.trim();
+
+  if (!candidateName) return;
+
+  // Update headers
+  document.getElementById("header-candidate-name").innerText = candidateName;
+  document.getElementById("candidate-badge").classList.remove("hidden");
+
+  // Close modal
+  document.getElementById("start-modal").classList.add("hidden");
+
+  // Initialize Exam Session
   timeRemaining = examConfig.durationMinutes * 60;
-
-  // Build Dynamic Section Tabs
   buildSectionTabs();
-
-  // Build Dynamic Question Palette
   buildPalette();
-
-  // Render First Question
   renderCurrentQuestion();
-
-  // Start Clock
   startTimer();
 }
 
@@ -76,7 +88,6 @@ function setupExamEnvironment() {
 function buildSectionTabs() {
   sectionTabsContainer.innerHTML = "";
   sections.forEach((sec, idx) => {
-    // Count questions for this section
     const count = questions.filter(q => q.sectionId === sec.id).length;
     const btn = document.createElement("button");
     btn.id = `sec-tab-${sec.id}`;
@@ -119,7 +130,7 @@ function updatePaletteUI() {
       btn.classList.add("answered");
     }
   });
-  paletteCountEl.innerText = `${answeredCount} /${questions.length} Answered`;
+  paletteCountEl.innerText = `${answeredCount} / ${questions.length} Answered`;
 }
 
 // Render Current Question
@@ -129,9 +140,8 @@ function renderCurrentQuestion() {
 
   qSectionBadgeEl.innerText = sectionObj.name;
   qDirectionEl.innerText = q.direction || "";
-  qTextEl.innerText = `${currentIndex + 1}.${q.question}`;
+  qTextEl.innerText = `${currentIndex + 1}. ${q.question}`;
 
-  // Render Options
   qOptionsEl.innerHTML = "";
   q.options.forEach((optText, optIdx) => {
     const isSelected = userAnswers[q.id] === optIdx;
@@ -155,11 +165,9 @@ function renderCurrentQuestion() {
     qOptionsEl.appendChild(optDiv);
   });
 
-  // Buttons State
   prevBtn.disabled = currentIndex === 0;
   nextBtn.innerText = currentIndex === questions.length - 1 ? "Review All" : "Next →";
 
-  // Tab highlighting
   highlightSectionTab(q.sectionId);
   updatePaletteUI();
 }
@@ -229,7 +237,7 @@ function startTimer() {
 function confirmSubmitExam() {
   const answered = Object.keys(userAnswers).length;
   const unattempted = questions.length - answered;
-  const msg = `Are you sure you want to submit?\n\n• Answered: ${answered}\n• Unattempted: ${unattempted}\n\nClick OK to evaluate your score.`;
+  const msg = `Candidate: ${candidateName}\n\nAre you sure you want to submit?\n• Answered: ${answered}\n• Unattempted: ${unattempted}\n\nClick OK to evaluate your score.`;
   if (confirm(msg)) {
     submitExam();
   }
@@ -248,7 +256,6 @@ function submitExam() {
   let wrong = 0;
   let unattempted = 0;
 
-  // Initialize Section Tracker dynamically
   const sectionStats = {};
   sections.forEach(sec => {
     sectionStats[sec.id] = {
@@ -282,9 +289,10 @@ function submitExam() {
   const netScore = (correct * posMark) - (wrong * negMark);
   const maxMarks = questions.length * posMark;
 
-  // Display Total Metrics
+  // Display Total Metrics & Candidate Evaluation Name
   document.getElementById("result-exam-title").innerText = examConfig.title;
-  document.getElementById("res-score").innerText = `${netScore.toFixed(2)} /${maxMarks.toFixed(0)}`;
+  document.getElementById("eval-candidate-name").innerText = candidateName;
+  document.getElementById("res-score").innerText = `${netScore.toFixed(2)} / ${maxMarks.toFixed(0)}`;
   document.getElementById("res-correct").innerText = correct;
   document.getElementById("res-wrong").innerText = wrong;
   document.getElementById("res-unattempted").innerText = unattempted;
@@ -304,7 +312,7 @@ function submitExam() {
       <div style="display:flex; gap:16px;">
         <span class="text-success">${st.correct} Correct</span>
         <span class="text-danger">${st.wrong} Wrong</span>
-        <span class="text-primary-dark font-semibold">Marks: ${sMarks.toFixed(2)} /${maxSecMarks.toFixed(0)}</span>
+        <span class="text-primary-dark font-semibold">Marks: ${sMarks.toFixed(2)} / ${maxSecMarks.toFixed(0)}</span>
       </div>
     `;
     breakdownEl.appendChild(row);
@@ -351,7 +359,8 @@ function renderSolutions(filter = 'all') {
 
     card.innerHTML = `
       <div class="sol-header">
-        <strong>${idx + 1}. ${q.question}</strong>${statusBadge}
+        <strong>${idx + 1}. ${q.question}</strong>
+        ${statusBadge}
       </div>
       <div class="sol-options-grid">
         ${q.options.map((opt, oIdx) => {
