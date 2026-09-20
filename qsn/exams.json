@@ -13,5 +13,20 @@
     "id": "wb_panchayat_2018-3",
     "name": "WB Gram Panchayat - 3",
     "file": "qsn/wb_panchayat_2018-3.json"
+  },
+  {
+    "id": "indian_polity_set",
+    "name": "Indian Polity & Constitution (Special Practice Set)",
+    "file": "qsn/indian_polity.json"
+  },
+  {
+    "id": "indian_geography_500",
+    "name": "Indian Geography & Physical Features - Complete 500 Qs Set",
+    "file": "qsn/indian_geography_500.json"
+  },
+  {
+    "id": "indian_history_master",
+    "name": "Indian History - Complete Practice Master Set",
+    "file": "qsn/indian_history_master.json"
   }
 ]
