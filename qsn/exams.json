@@ -10,9 +10,9 @@
     "file": "qsn/wb_panchayat_2018-2.json"
   },
   {
-    "id": "wb_panchayat_2018-3",
-    "name": "WB Gram Panchayat - 3",
-    "file": "qsn/wb_panchayat_2018-3.json"
+    "id": "general_science_1000",
+    "name": "Generate 1000 Science Questions(Physics, Chemistry, Biology & Health) - Mixed Set",
+    "file": "qsn/general_science_1000.json"
   },
   {
     "id": "indian_polity_set",
@@ -28,5 +28,20 @@
     "id": "indian_history_master",
     "name": "Indian History - Complete Practice Master Set",
     "file": "qsn/indian_history_master.json"
+  },
+  {
+    "id": "science_physics",
+    "name": "General Science - Physics (পদার্থবিজ্ঞান স্পেশাল)",
+    "file": "qsn/science_physics.json"
+  },
+  {
+    "id": "science_chemistry",
+    "name": "General Science - Chemistry (রসায়নবিদ্যা স্পেশাল)",
+    "file": "qsn/science_chemistry.json"
+  },
+  {
+    "id": "science_biology",
+    "name": "General Science - Biology & Health (জীববিজ্ঞান ও স্বাস্থ্য)",
+    "file": "qsn/science_biology.json"
   }
 ]

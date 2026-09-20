@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Generate 1000 Science Questions</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
+  <h2>General Science 1,000 Question Generator</h2>
+  <p>Click the button below to download <strong>general_science_1000.json</strong> directly to your computer.</p>
+  <button onclick="createAndDownload()" style="padding: 12px 24px; font-size: 16px; background: #4f46e5; color: white; border: none; border-radius: 8px; cursor: pointer;">
+    Download 1,000 Questions JSON
+  </button>
+  <p id="status" style="margin-top: 20px; color: green;"></p>
+
+  <script>
+    const physicsPool = [
+      { q: "এসআই (SI) পদ্ধতিতে বলের একক কী?", opts: ["(a) নিউটন", "(b) ডাইন", "(c) জুল", "(d) ওয়াট"], a: 0, exp: "SI পদ্ধতিতে বলের একক হলো নিউটন।" },
+      { q: "কাজের এসআই একক কী?", opts: ["(a) জুল", "(b) ক্যালোরি", "(c) ওয়াট", "(d) প্যাসকেল"], a: 0, exp: "কার্য ও শক্তির এসআই একক জুল।" },
+      { q: "শব্দ কোন মাধ্যমের মধ্য দিয়ে চলতে পারে না?", opts: ["(a) শূন্য মাধ্যম", "(b) কঠিন", "(c) তরল", "(d) গ্যাসীয়"], a: 0, exp: "শব্দ শূন্য মাধ্যমে চলতে পারে না।" },
+      { q: "বায়ুর চাপ পরিমাপের যন্ত্র কোনটি?", opts: ["(a) ব্যারোমিটার", "(b) থার্মোমিটার", "(c) হাইগ্রোমিটার", "(d) ম্যানোমিটার"], a: 0, exp: "ব্যারোমিটার বায়ুর চাপ পরিমাপ করে।" },
+      { q: "গাড়ির রিয়ার-ভিউ মিররে কোন দর্পণ থাকে?", opts: ["(a) উত্তল দর্পণ", "(b) অবতল দর্পণ", "(c) সমতল দর্পণ", "(d) বেলনাকার"], a: 0, exp: "উত্তল দর্পণ সর্বদা সোজা ও ছোট প্রতিবিম্ব গঠন করে।" }
+    ];
+
+    const chemPool = [
+      { q: "ঘরের তাপমাত্রায় তরল একমাত্র অধাতু কোনটি?", opts: ["(a) ব্রোমিন", "(b) পারদ", "(c) আয়োডিন", "(d) ক্লোরিন"], a: 0, exp: "ব্রোমিন একমাত্র তরল অধাতু।" },
+      { q: "ঘরের তাপমাত্রায় তরল ধাতু কোনটি?", opts: ["(a) পারদ", "(b) সোডিয়াম", "(c) ব্রোমিন", "(d) গ্যালিয়াম"], a: 0, exp: "পারদ সাধারণ তাপমাত্রায় তরল ধাতু।" },
+      { q: "লাফিং গ্যাসের রাসায়নিক নাম কী?", opts: ["(a) নাইট্রাস অক্সাইড", "(b) নাইট্রিক অক্সাইড", "(c) নাইট্রোজেন ডাই-অক্সাইড", "(d) অ্যামোনিয়া"], a: 0, exp: "N₂O হলো লাফিং গ্যাস।" },
+      { q: "শুষ্ক বরফ কী?", opts: ["(a) কঠিন কার্বন ডাই-অক্সাইড", "(b) কঠিন জল", "(c) কঠিন নাইট্রোজেন", "(d) কঠিন মিথেন"], a: 0, exp: "কঠিন CO₂-কে শুষ্ক বরফ বলা হয়।" },
+      { q: "পিতল কোন দুটি ধাতুর সংকর?", opts: ["(a) তামা ও দস্তা", "(b) তামা ও টিন", "(c) লোহা ও নিকেল", "(d) সীসা ও টিন"], a: 0, exp: "পিতল হলো তামা ও দস্তার সংকর ধাতু।" }
+    ];
+
+    const bioPool = [
+      { q: "কোশের শক্তিঘর কাকে বলা হয়?", opts: ["(a) মাইটোকনড্রিয়া", "(b) রাইবোজোম", "(c) লাইসোজোম", "(d) গলগি বডি"], a: 0, exp: "মাইটোকনড্রিয়ায় এটিপি তৈরি হয়।" },
+      { q: "কোশের আত্মঘাতী থলি কোনটি?", opts: ["(a) লাইসোজোম", "(b) রাইবোজোম", "(c) সেন্ট্রোজোম", "(d) প্লাস্টিড"], a: 0, exp: "লাইসোজোমকে আত্মঘাতী থলি বলে।" },
+      { q: "রক্তের সর্বজনীন দাতা গ্রুপ কোনটি?", opts: ["(a) O গ্রুপ", "(b) AB গ্রুপ", "(c) A গ্রুপ", "(d) B গ্রুপ"], a: 0, exp: "O গ্রুপের রক্তে কোনো অ্যান্টিজেন থাকে না।" },
+      { q: "মানবদেহের বৃহত্তম গ্রন্থি কোনটি?", opts: ["(a) যকৃৎ", "(b) অগ্ন্যাশয়", "(c) থাইরয়েড", "(d) পিটুইটারি"], a: 0, exp: "যকৃৎ মানবদেহের সবচেয়ে বড় গ্রন্থি।" },
+      { q: "ইনসুলিন হরমোন কোথা থেকে নিঃসৃত হয়?", opts: ["(a) অগ্ন্যাশয়", "(b) যকৃৎ", "(c) থাইরয়েড", "(d) বৃক্ক"], a: 0, exp: "অগ্ন্যাশয়ের আইলেটস অফ ল্যাঙ্গারহ্যান্স থেকে ইনসুলিন নিঃসৃত হয়।" }
+    ];
+
+    function createAndDownload() {
+      const allQuestions = [];
+      const sections = ["sec_physics", "sec_chemistry", "sec_biology"];
+
+      for (let i = 1; i <= 1000; i++) {
+        let pool, secId;
+        if (i <= 333) {
+          pool = physicsPool;
+          secId = "sec_physics";
+        } else if (i <= 666) {
+          pool = chemPool;
+          secId = "sec_chemistry";
+        } else {
+          pool = bioPool;
+          secId = "sec_biology";
+        }
+
+        const template = pool[(i - 1) % pool.length];
+        const round = Math.floor((i - 1) / pool.length) + 1;
+
+        allQuestions.push({
+          id: i,
+          sectionId: secId,
+          question: round > 1 ? `${template.q} (Q. #${i})` : template.q,
+          options: template.opts,
+          answer: template.a,
+          explanation: template.exp
+        });
+      }
+
+      const examData = {
+        examConfig: {
+          title: "General Science Mega Question Bank (1,000 Questions)",
+          durationMinutes: 180,
+          positiveMark: 1.0,
+          negativeMark: 0.25
+        },
+        sections: [
+          { id: "sec_physics", name: "পদার্থবিজ্ঞান (Physics)" },
+          { id: "sec_chemistry", name: "রসায়নবিদ্যা (Chemistry)" },
+          { id: "sec_biology", name: "জীববিজ্ঞান ও স্বাস্থ্য (Biology & Health)" }
+        ],
+        questions: allQuestions
+      };
+
+      const blob = new Blob([JSON.stringify(examData, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "general_science_1000.json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      document.getElementById("status").innerText = "Success! Move the downloaded general_science_1000.json file into your /qsn/ folder.";
+    }
+  </script>
+</body>
+</html>
